@@ -10,6 +10,8 @@ ffmpeg-python>=0.2.0              # FFmpeg bindings (FFmpeg binary must be insta
 openai-whisper>=20231117          # OpenAI Whisper (runs locally)
 torch>=2.2.0                      # PyTorch backend for Whisper
 torchaudio>=2.2.0                 # Audio utilities for PyTorch
+numba>=0.59.0                     # Pinned: older numba pulls an llvmlite that can't build on Python 3.12
+llvmlite>=0.42.0                  # Pinned: needed for Python 3.12 compatibility
 
 # ── Translation (Hindi → English) ─────────────────────────────────────────────
 deep-translator>=1.11.4           # Lightweight translation wrapper (Google backend)
